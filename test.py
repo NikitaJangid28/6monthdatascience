@@ -37,7 +37,7 @@
 # print(st.rstrip())
 
 
-st = " "
+st = " 
 # print(st.isupper())
 # print(st.islower())
 # print(st.isalpha())     # 
