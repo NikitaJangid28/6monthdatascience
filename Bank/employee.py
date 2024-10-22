@@ -38,7 +38,15 @@
 # print(employee_salary)
 
 
-from manager import employe_name as name 
-from manager import employee_id as id 
-from manager import employee_pass as password 
-print(name,id,password )
+# from manager import employe_name as name 
+# from manager import employee_id as id 
+# from manager import employee_pass as password 
+# print(name,id,password )
+
+
+import manager 
+# print(manager.manager_id)
+# print(manager.manager_password)
+# print(__name__)
+
+
