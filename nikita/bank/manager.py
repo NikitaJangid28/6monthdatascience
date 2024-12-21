@@ -1,6 +1,8 @@
-manager_name = "satypal singh"
-manager_id = "satypal@gmail.com"
-manager_pass = "satya123"
+
+if __name__ == "__main__":
+    manager_name = "satypal singh"
+    manager_id = "satypal@gmail.com"
+    manager_pass = "satya123"
 
 employee_name = "Nikita Jangid"
 employee_id = "nikitajangid@gmail.com"
