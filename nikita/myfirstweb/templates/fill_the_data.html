@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+
+
+    #formpage{
+        background-color: rgb(157, 230, 11);
+        border:solid black;
+        padding: 20px;
+        
+    }
+
+    body{
+        background-color: rgb(26, 241, 30);
+    }
+    #sbtn{
+        width: 200px;
+        height: 35px;
+        font-size: 20px;
+        background-color: rgb(48, 31, 5);
+        border-radius: 35px;
+        color: aliceblue;
+        border: solid white;
+    }
+</style>
+
+    <h1>Fill Your Data 😎</h1>
+
+<div id="formpage">
+
+    <form action="{{ url_for('submitdata') }}" method="post">
+
+        <label for="">Name :  </label>
+        <input type="text" name="name" placeholder="enter your name" required><br> <br>
+
+        <label for="">Gmail : </label>
+        <input type="email" name="email" placeholder="enter your email" required><br><br>
+
+        <label for="">Contact No. :</label>
+        <input type="text" name="contact" placeholder="mobile no" required><br><br>
+
+        <label for="">Password : </label>
+        <input type="password" name="password" placehlder="enter password" required>
+
+    
+<br><br>
+        <button type="submit" id="sbtn">SUBMIT</button>
+    </form>
+</div>
+
+</body>
+</html>

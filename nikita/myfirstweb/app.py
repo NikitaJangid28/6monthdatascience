@@ -1,4 +1,4 @@
-from flask import Flask , render_template
+from flask import Flask , render_template , url_for , request 
 app = Flask(__name__)
 
 
@@ -12,6 +12,18 @@ def home():
 def about():
     # return "Hey you are at about page url" 
     return render_template('about.html')
+
+@app.route('/userdata')
+def userdata():
+    return render_template("fill_the_data.html")
+
+@app.route("/submitdata",methods=['GET','POST'])
+def submitdata():
+    if request.method == 'POST':
+        user_data = request.form
+        return user_data
+
+
 
 # ip:port_no/contact
 @app.route('/contact') 
