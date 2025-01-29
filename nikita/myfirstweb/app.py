@@ -17,11 +17,23 @@ def about():
 def userdata():
     return render_template("fill_the_data.html")
 
+# @app.route("/submitdata",methods=['GET','POST'])
+# def submitdata():
+#     if request.method == 'POST':
+#         user_data = request.form   #{k:v}
+#         name = user_data['name']
+#         return name  
+
+
 @app.route("/submitdata",methods=['GET','POST'])
 def submitdata():
     if request.method == 'POST':
-        user_data = request.form
-        return user_data
+        name = request.form["name"]
+        email = request.form['email']
+        contact = request.form["contact"]
+        password = request.form['password']
+        user_data = [name,email,contact,password]
+        return user_data  
 
 
 
