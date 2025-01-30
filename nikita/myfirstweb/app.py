@@ -1,4 +1,6 @@
 from flask import Flask , render_template , url_for , request 
+import mysql.connector as mc 
+conn = mc.connect(user='root',password="Radhey254875",host="localhost",database='radhey')
 app = Flask(__name__)
 
 
@@ -32,9 +34,20 @@ def submitdata():
         email = request.form['email']
         contact = request.form["contact"]
         password = request.form['password']
-        user_data = [name,email,contact,password]
-        return user_data  
 
+        query = """
+        INSERT INTO userdata (name ,gmail, contact ,password)
+        VALUES (%s,%s,%s,%s)
+        """
+        mycursor = conn.cursor()
+        user_data = (name,email,contact,password)
+        mycursor.execute(query,user_data)
+        conn.commit()
+        
+        mycursor.close()
+        conn.close()
+
+        return "Your data is sent to the database 😊!"
 
 
 # ip:port_no/contact
