@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Basic Styling - Customize as needed */
+        body {
+            font-family: sans-serif;
+            padding-top: 70px; /* Adjust for navbar height */
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .jumbotron {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover; /* Prevents image distortion */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Your Name</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="jumbotron text-center">
+        <div class="container">
+            <img src="profile_placeholder.jpg" alt="Your Profile Picture" class="profile-image">  <h1 class="display-4">Your Name</h1>
+            <p class="lead">Web Developer | Designer | Creator</p>
+            <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Write a brief and engaging introduction about yourself.  Mention your skills, experience, and what you're passionate about.  This is your chance to make a great first impression!</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="project1_placeholder.jpg" class="card-img-top" alt="Project 1"> <div class="card-body">
+                            <h5 class="card-title">Project 1 Title</h5>
+                            <p class="card-text">Short description of project 1.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="project2_placeholder.jpg" class="card-img-top" alt="Project 2"> <div class="card-body">
+                            <h5 class="card-title">Project 2 Title</h5>
+                            <p class="card-text">Short description of project 2.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="project3_placeholder.jpg" class="card-img-top" alt="Project 3"> <div class="card-body">
+                            <h5 class="card-title">Project 3 Title</h5>
+                            <p class="card-text">Short description of project 3.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+            <p>LinkedIn: linkedin.com/in/yourprofile</p>
+            <p>GitHub: github.com/yourusername</p>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

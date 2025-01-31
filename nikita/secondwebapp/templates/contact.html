@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .contact-header {
+            background: linear-gradient(135deg, #6c63ff, #8569ff);
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+        }
+        .contact-header h1 {
+            font-size: 2.5rem;
+        }
+        .contact-header p {
+            font-size: 1.2rem;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #6c63ff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #564ec4;
+        }
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>we are happy to help you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form and Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="card p-4">
+                        <h3 class="mb-4">Send Us a Message</h3>
+                        <form action="{{ url_for('submitdata') }}" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Write your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="col-lg-5">
+                    <div class="card p-4">
+                        <h3 class="mb-4">Contact Information</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <strong>📍 Address:</strong> 123 Upflairs Lane, AI City, Techland
+                            </li>
+                            <li class="mb-3">
+                                <strong>📞 Phone:</strong> +1 (555) 123-4567
+                            </li>
+                            <li class="mb-3">
+                                <strong>📧 Email:</strong> contact@upflairs.com
+                            </li>
+                        </ul>
+                        <h5>Follow Us</h5>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="#" class="text-primary"><i class="bi bi-facebook fs-3"></i></a>
+                            <a href="#" class="text-info"><i class="bi bi-twitter fs-3"></i></a>
+                            <a href="#" class="text-danger"><i class="bi bi-instagram fs-3"></i></a>
+                            <a href="#" class="text-dark"><i class="bi bi-linkedin fs-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Upflairs. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
