@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <style>
+
+table, th, td {
+  border: 2px solid black;
+}
+td{
+    padding: 15px;
+}
+
+    </style>
+    <h2>This is dashboard page</h2>
+    
+    <!-- <h3>User Name : {{ username }}</h3>
+    <h3>User Password : {{ password }}</h3>
+    <h3>User Contact : {{ contanct }}</h3> -->
+
+    <!-- <h2>user_details : {{ userdetails }}</h2>  <br><br> -->
+
+    <!-- <p>User name : {{ userdetails['name'] }}</p>
+    <p>city : {{ userdetails['city'] }}</p>
+    <p>college name : {{ userdetails['college'] }}</p> -->
+
+
+    <h2>user_details : {{ userdetails }}</h2>  <br><br>
+    <h3>Row 1 : {{ userdetails[0] }}</h3>
+    <h3>Row 2 : {{ userdetails[1] }}</h3>
+    <h3>Row 3 : {{ userdetails[2] }}</h3>
+    <br><br><br>
+
+    <table>
+        <tr>  
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Password</th>
+          </tr>
+
+        <tr>
+
+            <td>{{ userdetails[0][0] }}</td>
+            <td>{{ userdetails[0][1] }}</td>
+            <td>{{ userdetails[0][2] }}</td>
+            <td>{{ userdetails[0][3] }}</td>
+
+        </tr>
+
+    <tr>
+
+        <td>{{ userdetails[1][0] }}</td>
+        <td>{{ userdetails[1][1] }}</td>
+        <td>{{ userdetails[1][2] }}</td>
+        <td>{{ userdetails[1][3] }}</td>
+
+
+    </tr>
+        
+
+    </table>
+
+
+
+</body>
+</html>
